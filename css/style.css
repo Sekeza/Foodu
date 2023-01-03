@@ -158,6 +158,46 @@ header .app-header-2 {
     }
 }
 @media (max-width: 768px) {
+    header .app-header-1 {
+        display: block;
+        text-align: center;
+        margin: 2rem 0;
+        /* align-items: center;
+        justify-content: space-between;
+        background-color: #f3f6f9;
+        padding: 2rem 3.5rem; */
+    }
+    
+    .app-header-1 .input-field {
+        width: 50rem;
+        height: 4rem;
+        position: relative;
+    }
+    .app-header-1 .input-field input {
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+        font-size: 1.6rem;
+        padding: 0 1rem;
+        border-radius: 0.5rem;
+        background: #eeefbc;
+        box-shadow: inset 0 0 0.03rem 0.05rem rgba(0, 0, 0, 0.35); 
+    }
+
+    .app-header-1 .input-field label {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        height: 100%;
+        width: 3rem;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        right: -5px;
+        margin-right: 2.5rem;
+    }
+    header .app-header-1 .icons {
+        display: none;
+    }
     .app-header-2 .menu-flip #menu-bars {
         display: inline-block;
     }
