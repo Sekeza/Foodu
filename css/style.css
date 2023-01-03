@@ -64,13 +64,48 @@ header .app-header-1 .logo {
     color: var(--purple);
 }
 
-.app-header-1 input {
+.app-header-1 .input-field {
+    display: flex;
     width: 50rem;
     height: 4rem;
+    position: relative;
+}
+.app-header-1 .input-field input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
     padding: 0 1rem;
     border-radius: 0.5rem;
+    background: #eeefbc;
+    /* box-shadow: 0 0 0.03rem 0.05rem rgba(0, 0, 0, 0.2); */
+    box-shadow: inset 0 0 0.03rem 0.05rem rgba(0, 0, 0, 0.35);
+    
+}
+.app-header-1 .input-field input:hover {
+    border: 0.1rem solid var(--purple);
+    background: #eee;
+}
+.app-header-1 .input-field input::placeholder {
+    color: var(--purple);
+}
+.app-header-1 .input-field input:focus {
+    border: 0.1rem solid var(--purple);
+}
+.app-header-1 .input-field label {
+    color: var(--purple);
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    height: 100%;
+    width: 3rem;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    right: -5px;
+    margin-right: 2.5rem;
 
 }
+
 .app-header-1 .icons a {
     font-size: 1.7rem;
     color: var(--black);
@@ -93,10 +128,22 @@ header .app-header-2 {
     color: white;
     margin: 0 2rem;
 }
+.app-header-2 .app-nav a:hover {
+    color: #eeefbc;
+}
 .app-header-2 .menu-flip #menu-bars {
     font-size: 1.7rem;
     color: white;
     margin-right: 1.5rem;
     border-radius: 2rem;
     cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 0;
+    }
 }
