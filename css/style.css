@@ -29,6 +29,16 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 5.5rem;
 }
+html::-webkit-scrollbar {
+    width: .2rem;
+}
+html::-webkit-scrollbar-track {
+    background: var(--genbg);
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 0.2rem;
+}
 
 .app-container {
     background: var(--genbg);
@@ -128,7 +138,7 @@ header .app-header-2 {
     color: white;
     margin: 0 2rem;
 }
-.app-header-2 .app-nav a:hover {
+.app-header-2 .app-nav a:active, .app-header-2 .app-nav a:hover {
     color: #eeefbc;
 }
 .app-header-2 .menu-flip #menu-bars {
@@ -137,6 +147,7 @@ header .app-header-2 {
     margin-right: 1.5rem;
     border-radius: 2rem;
     cursor: pointer;
+    display: none;
 }
 
 @media (max-width: 991px) {
@@ -145,5 +156,35 @@ header .app-header-2 {
     }
     header {
         padding: 0;
+    }
+}
+@media (max-width: 768px) {
+    .app-header-2 .menu-flip #menu-bars {
+        display: inline-block;
+    }
+    header {
+        padding: 0;
+    }
+    .app-header-2 .app-nav {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #000;
+        padding: 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        font-size: 1.7rem;
+        color: white;
+        margin: 0 2rem;
+    }
+    .app-header-2 .app-nav a {
+        display: block;
+        background: #38826e;
+        padding: 2rem;
+        font-size: 1.7rem;
+        margin: 2rem;
+    }
+    .app-header-2 .app-nav.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
