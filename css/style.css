@@ -161,17 +161,15 @@ header .app-header-2 {
     header .app-header-1 {
         display: block;
         text-align: center;
-        margin: 2rem 0;
-        /* align-items: center;
-        justify-content: space-between;
-        background-color: #f3f6f9;
-        padding: 2rem 3.5rem; */
+        /* margin: 2rem 0;
+        margin-bottom: 0; */
     }
     
     .app-header-1 .input-field {
         width: 50rem;
         height: 4rem;
         position: relative;
+        margin-bottom: 1.5rem;
     }
     .app-header-1 .input-field input {
         margin-top: 2rem;
@@ -214,13 +212,15 @@ header .app-header-2 {
     }
     .app-header-2 .app-nav a {
         display: block;
-        /* background: #38826e; */
         background: #222;
         padding: 1rem;
         font-size: 1.7rem;
         margin: 1rem 0;
         color: white;
         border-radius: 0.3rem;
+    }
+    .app-header-2 .app-nav a:hover {
+        background: #38826e;
     }
     .app-header-2 .app-nav.active { 
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
