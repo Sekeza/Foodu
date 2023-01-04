@@ -169,7 +169,7 @@ header .app-header-2 {
    
 }
 .footer .box-container .box {
-    background: #fff;
+    background: rgb(182, 6, 6);
 }
 .footer .box-container .box span {
     font-size: 1rem;
@@ -233,7 +233,7 @@ header .app-header-2 {
     padding-top: 2.5rem;
     margin-top: 2.5rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: #222;
 
     position: absolute;
     bottom: 0;
