@@ -149,6 +149,98 @@ header .app-header-2 {
     display: none;
 }
 
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: 250px 2fr auto 1fr;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(100, 1fr)); */
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+   
+}
+.footer .box-container .box {
+    background: #fff;
+}
+.footer .box-container .box span {
+    font-size: 1rem;
+    color: rgb(12, 2, 2);
+    padding: 1rem 0;
+    /* padding-bottom: 5.8rem; */
+}
+.footer .box-container .box h3 {
+    font-size: 1rem;
+    color: rgb(12, 2, 2);
+    padding: 1rem 0;
+}
+.footer .box-container .box h4 {
+    font-size: .9rem;
+    color: rgb(12, 2, 2);
+    padding: 1rem 0;
+}
+.footer .box-container .box a {
+    display: block;
+    font-size: .8rem;
+    color: #777;
+    padding: .2rem 0;
+}
+.footer .box-container .box a:hover {
+    color: #fff;
+    background: #777;
+}
+
+.footer .box-container .box form input[type="email"] {
+    width: 80%;
+    height: 1.7rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 .1rem .2rem rgba(0,0,0,0.2);
+    background: #f6f6f6;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    color: #222;
+    text-transform: none;
+    margin: .5rem 0;
+}
+.footer .box-container .box form input[type="submit"] {
+    display: block;
+    margin-top: 1rem;
+    box-shadow: 0 .1rem .2rem rgba(0,0,0,0.2);
+    background: #ad8a8a;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    color: #222;
+    cursor: pointer;
+    z-index: 2;
+}
+.footer .box-container .box form input[type="submit"]:hover {
+    background: #222;
+    color: #ad8a8a;
+}
+.footer .credit {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+
+    position: absolute;
+    bottom: 0;
+    
+}
+
+
 @media (max-width: 991px) {
     html {
         font-size: 55%;
