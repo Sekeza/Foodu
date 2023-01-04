@@ -197,14 +197,11 @@ header .app-header-2 {
 .footer .box-container .box form input[type="email"] {
     width: 80%;
     height: 1.7rem;
-    outline: none;
-    border: none;
     box-shadow: 0 .1rem .2rem rgba(0,0,0,0.2);
     background: #f6f6f6;
     padding: .5rem 1rem;
     font-size: .8rem;
     color: #222;
-    text-transform: none;
     margin: .5rem 0;
 }
 .footer .box-container .box form input[type="submit"] {
