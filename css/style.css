@@ -160,13 +160,10 @@ header .app-header-2 {
 
 .footer .box-container {
     display: grid;
-    grid-template-columns: 250px 2fr auto 1fr;
-
-    /* grid-template-columns: repeat(auto-fit, minmax(100, 1fr)); */
+    /* grid-template-columns: 250px 2fr auto 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(100, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
-
-   
 }
 .footer .box-container .box {
     background: rgb(182, 6, 6);
@@ -175,7 +172,6 @@ header .app-header-2 {
     font-size: 1rem;
     color: rgb(12, 2, 2);
     padding: 1rem 0;
-    /* padding-bottom: 5.8rem; */
 }
 .footer .box-container .box h3 {
     font-size: 1rem;
