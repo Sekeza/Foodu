@@ -150,6 +150,18 @@ header .app-header-2 {
 }
 
 
+.home {
+    background: var(--deepbg);
+    padding: 0;
+    /* padding-top: 20m; */
+    margin-top: 18rem;
+}
+.home .home-slider .slide {
+    background-color: #ccc;
+    border: 0.1rem solid #e0e41b;
+
+}
+
 .footer {
     display: flex;
     align-items: center;
